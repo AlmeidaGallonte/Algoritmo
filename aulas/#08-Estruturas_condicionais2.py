@@ -52,7 +52,7 @@ else:
 print('-'*25)'''
 
 #CRIANÇA ESPERANÇA
-while True:
+'''while True:
     print('-'*20)
     print(' CRIANÇA ESPERANÇA')
     print('-'*20)
@@ -74,4 +74,21 @@ while True:
         print('Operação cancelada...')
         break
     else:
-        print('ERRO:Resposta invaída. tente novamente')
+        print('ERRO:Resposta invaída. tente novamente')'''
+
+#QUANTIDADE DE DEPENDENTES DE UM FUNCIONÁRIO
+
+'''nome = str(input('NOME: '))
+salario = float(input('SALARIO: R$'))
+dependentes = int(input('DEPENDENTES: '))
+
+if dependentes == 0:
+    novo_salario = salario + salario*5/100
+elif dependentes == 1 or dependentes == 2 or dependentes == 3:
+    novo_salario = salario + salario*10/100
+elif dependentes == 4 or dependentes == 5 or dependentes == 6:
+    novo_salario = salario + salario*15/100
+else:
+    novo_salario = salario + salario*18/100
+
+print(f'Salario de {nome} era R${salario:.2f} e passou a ser de R${novo_salario:.2f}')'''
