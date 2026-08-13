@@ -1,4 +1,4 @@
-from rich import print
+from rich import print,inspect
 #Variavel simples
 '''n1, n2, n3, n4 = 3, 5, 1, 0'''
 
@@ -80,3 +80,15 @@ print('-'*20)
 for c in range(len(seC)):
     print(seC[c])
 print('-'*20)'''
+
+#Ordenação do vetor
+notas = [0,0,0,0]
+
+for i in range(4):
+    notas[i] = int(input('Digite um valor: '))
+
+print(notas)
+notas.sort(reverse=True)
+print(notas)
+
+
