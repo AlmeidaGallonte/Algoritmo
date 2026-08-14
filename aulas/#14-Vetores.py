@@ -82,13 +82,11 @@ for c in range(len(seC)):
 print('-'*20)'''
 
 #Ordenação do vetor
-notas = [0,0,0,0]
+'''notas = [0,0,0,0]
 
 for i in range(4):
     notas[i] = int(input('Digite um valor: '))
 
 print(notas)
 notas.sort(reverse=True)
-print(notas)
-
-
+print(notas)'''
