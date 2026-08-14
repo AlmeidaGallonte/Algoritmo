@@ -1,0 +1,40 @@
+gabarito = []
+totalunos = []
+alunogabarito = []
+tempalunos = {}
+
+print('-'*25)
+print('   PASSO 1 - GABARITO')
+print('-'*25)
+
+for p in range(5):
+    gabarito.append(str(input(f'Questão {p+1}: ')))
+
+for a in range(3):
+    print('-'*25)
+    print(f'ALUNO {a+1}')
+    print('-'*25)
+    nome = str(input('Nome: '))
+    tempalunos['nome'] = nome
+    print('RESPOSTA DADA')
+
+    alunogabarito = []
+    for c in range(5):
+        alunogabarito.append(str(input(f'Questão {c+1}: ')))
+    tempalunos['gabarito'] = alunogabarito
+    totalunos.append(tempalunos.copy())
+    tempalunos.clear()
+
+print('-'*25)
+print('   PASSO 4 - CORREÇÃO')
+print('-'*25)
+
+for aluno in totalunos:
+    acertos = 0
+    for resp_aluno, resp_gabarito in zip(aluno['gabarito'], gabarito):
+        if resp_aluno == resp_gabarito:
+            acertos += 1
+    nota = acertos * 2
+    print(f'{aluno["nome"]:25}{nota:.2f}')
+    
+print('-'*25)
